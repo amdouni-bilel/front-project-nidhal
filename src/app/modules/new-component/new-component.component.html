@@ -1,0 +1,35 @@
+<table class="user-table">
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Nom</th>
+    <th>Prénom</th>
+    <th>Date de Naissance</th>
+    <th>Genre</th>
+    <th>Téléphone</th>
+    <th>Adresse</th>
+    <th>Action</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let user of users">
+    <td>{{ user.id }} | </td>
+    <td>{{ user.NOM }}</td>
+    <td>{{ user.PRENOM }}</td>
+    <td>{{ user.dateNaissance }} </td>
+    <td>{{ user.GENRE  }}</td>
+    <td>{{ user.TELEPHONE }}</td>
+    <td>{{ user.ADRESSE }}</td>
+    <td class="overflow-hidden">
+      <div ngbDropdown container="body">
+        <button class="btn btn-warning" [routerLink]="['/edit-user/', user.id]" style="background-color: #007bff;"><i class="fas fa-edit"></i>Edit</button>
+        <button class="btn btn-danger" (click)="deleteUserList()" style="background-color: red;"><i class="fas fa-trash"></i>Delete</button>
+      </div>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+
+
+

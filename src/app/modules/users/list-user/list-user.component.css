@@ -1,0 +1,51 @@
+/* Style pour le tableau d'utilisateurs */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-table th, .user-table td {
+  border: 1px solid #ddd;
+  padding: 10px; /* Ajout d'un peu plus d'espacement */
+}
+
+.user-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  text-align: left;
+}
+
+.user-table tbody tr:nth-child(even) {
+  background-color: #f5f5f5; /* Changement de couleur pour les lignes paires */
+}
+
+.user-table tbody tr:hover {
+  background-color: #e6e6e6; /* Légère variation de couleur au survol */
+}
+
+/* Style pour les boutons d'édition et de suppression */
+.user-table .btn {
+  margin-right: 5px; /* Ajout d'un espacement entre les boutons */
+}
+
+.user-table .btn i {
+  margin-right: 5px; /* Espacement entre l'icône et le texte */
+}
+/* Style pour les boutons d'édition et de suppression */
+.user-table .btn {
+  margin-right: 5px; /* Ajout d'un espacement entre les boutons */
+  color: #fff; /* Couleur du texte blanc */
+  border: none; /* Suppression de la bordure */
+  border-radius: 4px; /* Ajout d'un peu de bord arrondi */
+  padding: 8px 12px; /* Ajout de rembourrage */
+  cursor: pointer; /* Curseur de type pointeur au survol */
+  transition: background-color 0.3s ease; /* Transition fluide de la couleur de fond */
+}
+
+.user-table .btn:hover {
+  background-color: #0056b3; /* Légère variation de couleur au survol */
+}
+
+.user-table .btn i {
+  margin-right: 5px; /* Espacement entre l'icône et le texte */
+}

@@ -1,0 +1,17 @@
+footer {
+    padding: 20px;
+    background-color :darkgrey;
+    }
+
+
+/* Style pour le footer */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333; /* Couleur de fond du footer */
+  color: #fff; /* Couleur du texte du footer */
+  text-align: center; /* Alignement du texte au centre */
+  padding: 10px 0; /* Ajout de rembourrage en haut et en bas */
+}

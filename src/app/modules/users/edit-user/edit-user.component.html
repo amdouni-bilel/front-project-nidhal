@@ -1,0 +1,43 @@
+<div class="container">
+  <h2>Ajouter un utilisateur</h2>
+  <form [formGroup]="userForm"  class="user-form">
+    <div class="form-group">
+      <label for="nom">Nom <span class="badge">obligatoire</span>:</label>
+      <input type="text" id="nom" name="nom" class="form-control" formControlName="nom" >
+    </div>
+    <div class="form-group">
+      <label for="prenom">Prénom <span class="badge">obligatoire</span>:</label>
+      <input type="text" id="prenom" name="prenom" class="form-control" formControlName="prenom" >
+    </div>
+    <div class="form-group">
+      <label for="dateNaissance">Date de Naissance <span class="badge">obligatoire</span>:</label>
+      <input type="text" id="dateNaissance" name="dateNaissance" class="form-control" formControlName="dateNaissance" >
+    </div>
+    <div class="form-group">
+      <label for="genre">Genre <span class="badge">obligatoire</span>:</label>
+      <select id="genre" name="genre" formControlName="genre">
+        <option value="M">Masculin</option>
+        <option value="F">Féminin</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="telephone">Téléphone <span class="badge">obligatoire</span>:</label>
+      <input type="tel" id="telephone" name="telephone" formControlName="telephone" class ="form-control">
+    </div>
+    <div class="form-group">
+      <label for="adresse">Adresse <span class="badge">obligatoire</span>:</label>
+      <textarea id="adresse" name="adresse" formControlName="adresse" class ="form-control"></textarea>
+    </div>
+
+    <div class="col-8 mb-1">
+      <button   (click)=" handleAddUser()"
+                type="submit"
+                class="btn btn btn-success mr-1"
+      >Edit</button>
+
+      <button type="reset" rippleEffect class="btn btn-outline-secondary mr-1"
+           >Annuler</button >
+    </div>
+
+  </form>
+</div>

@@ -1,0 +1,75 @@
+:host {
+    padding: 20px ;
+    background-color :black;
+    }
+
+
+    .sidebar-links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* Espacement entre les liens */
+    }
+
+    .sidebar-links a {
+        text-decoration: none; /* Supprime le soulignement des liens */
+        color: white; /* Couleur du texte */
+        font-size: 16px; /* Taille de la police */
+    }
+
+    .sidebar-links a:hover {
+        color: white; /* Couleur du texte au survol */
+        font-weight: bold; /* Met en gras au survol */
+    }
+/* Style pour le sous-menu */
+
+
+
+/* Style pour le sous-menu */
+/* Style pour le sous-menu */
+.sub-menu {
+  padding-left: 20px; /* Indentation du sous-menu */
+  max-height: 0; /* Masquer le sous-menu par défaut */
+  overflow: hidden; /* Cacher le contenu qui dépasse */
+  transition: max-height 0.3s ease; /* Ajouter une transition pour l'animation */
+}
+
+/* Ajouter une animation lorsque le sous-menu est visible */
+.sub-menu.active {
+  max-height: 100px; /* Hauteur maximale du sous-menu lorsque visible */
+}
+
+/* Style pour le container englobant */
+:host {
+  display: flex;
+  min-height: 100vh; /* Hauteur minimale de la vue à 100% de la hauteur de la fenêtre */
+  margin: 0; /* Supprimer les marges par défaut du body */
+}
+
+/* Style pour le sidebar */
+.sidebar {
+  height: 100%; /* Hauteur de 100% du container englobant */
+  width: 250px; /* Largeur du sidebar */
+  background-color: white; /* Couleur de fond du sidebar */
+  color: #fff; /* Couleur du texte du sidebar */
+  padding: 20px; /* Ajout de rembourrage à l'intérieur du sidebar */
+  position: fixed; /* Position fixe pour rester en place même en faisant défiler la page */
+  top: 0; /* Position en haut de la page */
+  left: 0; /* Position à gauche de la page */
+  display: flex;
+  flex-direction: column; /* Permettre à la hauteur de s'étendre en colonne */
+  justify-content: flex-start; /* Aligner le contenu en haut du sidebar */
+}
+
+/* Style pour le contenu principal */
+.main-content {
+  flex: 1; /* Le contenu principal prend tout l'espace restant en hauteur */
+  padding: 20px; /* Ajout de rembourrage pour éviter le chevauchement avec le sidebar */
+}
+
+/* Style pour les liens du sidebar */
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
